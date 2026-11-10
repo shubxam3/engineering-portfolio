@@ -1,8 +1,8 @@
-# Pneumatic gear shifter: sizing study
+# Pneumatic gear shifter
 
 **Formula Manipal (Formula Student), 2020 · Excel, pneumatic circuit design**
 
-The combustion car used a motorcycle gearbox with a sequential shift drum. A pneumatic actuator on the shift lever lets the driver change gear from paddles on the steering wheel, which shortens the shift and keeps both hands on the wheel. I studied what such a system needs and sized the actuator.
+The combustion car used a motorcycle gearbox with a sequential shift drum. A pneumatic actuator on the shift lever lets the driver change gear from paddles on the steering wheel, which shortens the shift and keeps both hands on the wheel. I studied what such a system needs and sized the actuator. The shifter was built and ran on the car.
 
 ## Sizing
 
