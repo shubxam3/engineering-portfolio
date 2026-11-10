@@ -64,6 +64,16 @@ Because the differential is off-centre, the left and right shafts have different
 
 Selected configuration: 19 × 9 mm for the short shaft and 20.2 × 12 mm for the long one, shear stress 406 and 366 MPa against a 550 MPa limit, twist angles within about one degree of each other.
 
+## From study to car
+
+The study above was my own first pass. The drivetrain that the transmission subsystem took to the Formula Bharat design events in 2021 and 2022 kept its concept and refined it:
+
+- **Final drive ratio.** Swept in OptimumLap over acceleration, skidpad, autocross and endurance. Shift time was added per gear change, the lap times were converted to event points, and the ratio with the most points won: 2.7 to 2.8, realised as 11/30 teeth = 2.727.
+- **Sprockets.** Driving sprocket in heat-treated EN24 steel, driven sprocket in Al 7075-T6. The driven sprocket was optimised for one direction of rotation, and 7075 was chosen over 6061 so it stays safe even if mounted reversed.
+- **Differential mounts.** Left and right mount assemblies of 159 g and 138 g. The complete mounting weighs 349 g against 1115 g on the previous car, a saving of 766 g.
+- **Half shafts.** Titanium Grade 5, validated by twisting three specimens to failure on a test machine (maximum shear stress 678 to 771 MPa).
+- **Gearbox.** Lap simulation showed the car never uses 5th and 6th gear, so those gears and their selector fork were removed and replaced by spacers, saving about 550 g.
+
 ## What I would do differently now
 
 - The FEA results are single runs without a mesh convergence check, and the peak stresses sit at sharp corners, so the numbers are indicative.

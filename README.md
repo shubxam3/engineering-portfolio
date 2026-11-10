@@ -7,7 +7,7 @@ Case studies of mechanical and mechatronic work that does not live in a code rep
 | Case study | What it covers |
 |---|---|
 | [Chain-drive drivetrain design study](formula-manipal/drivetrain-design-study.md) | Load calculation, differential mounts, sprockets and half shafts with CATIA and ANSYS |
-| [Pneumatic gear shifter](formula-manipal/pneumatic-shifter.md) | Actuator sizing and pneumatic circuit design for a shifter that ran on the car |
+| [Electro-pneumatic shifting and clutching](formula-manipal/pneumatic-shifter.md) | Actuator sizing, air budget and ECU shift strategies for the system on the combustion car |
 | [Leading Formula Manipal](formula-manipal/team-lead.md) | Two seasons as team lead of an 80-member team, two cars, competition results |
 | [Acceleration simulation](https://github.com/shubxam3/fs-acceleration-sim) | MATLAB/Simulink gear-ratio study for High-Speed Karlsruhe (separate repository with code) |
 

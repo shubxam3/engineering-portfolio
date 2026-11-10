@@ -19,6 +19,11 @@ Formula Manipal is the Formula Student team of Manipal Institute of Technology. 
 | Formula Bharat 2021, Rulebook Test | 1st in both classes |
 | Formula Student Germany 2022 | 6th in the Business Plan event |
 
+## The cars
+
+- **Combustion car (FMXX1).** Honda CBR600RR, chain drive to the differential, electro-pneumatic shifting and clutching, full aero package. Entered at Formula Student Germany 2022 as car 296.
+- **Electric car.** Single EMRAX 208 motor driving the rear wheels through a two-stage chain reduction with eccentric chain tensioning, chosen over a planetary gearbox for lower weight, lower inertia and simpler manufacturing.
+
 ## How the team ran
 
 - **Weekly reports.** Every subsystem and every member filed a short weekly report: goals, what was finished, what was not and why. It made slipping tasks visible within a week.

@@ -1,12 +1,27 @@
-# Pneumatic gear shifter
+# Electro-pneumatic gear shifting and clutching
 
-**Formula Manipal (Formula Student), 2020 · Excel, pneumatic circuit design**
+**Formula Manipal (Formula Student), combustion car, 2020 – 2022 · transmission subsystem**
 
-The combustion car used a motorcycle gearbox with a sequential shift drum. A pneumatic actuator on the shift lever lets the driver change gear from paddles on the steering wheel, which shortens the shift and keeps both hands on the wheel. I studied what such a system needs and sized the actuator. The shifter was built and ran on the car.
+The combustion car runs a Honda CBR600RR engine with its sequential motorcycle gearbox. Instead of a hand lever and a clutch pedal, the driver shifts and clutches with buttons on the steering wheel, and pneumatic actuators do the work. Both hands stay on the wheel, the clutch pedal disappears from the footwell, and shifts are faster and repeatable.
+
+The system was a joint effort of the transmission and electronics subsystems and ran on the car. My part was on the transmission side, starting with the actuator sizing.
+
+## System
+
+| | Gear shifting | Clutch |
+|---|---|---|
+| Actuator | Pneumatic cylinder on the shift spindle | Spring-return cylinder |
+| Valves | Two directional control valves behind a pressure regulator | One directional control valve behind a pressure regulator |
+| System pressure | 6 bar | 7.5 bar |
+| Torque needed at the spindle | 7.2 Nm | 6.3 Nm |
+| Actuation time | 80 ms upshift, 100 ms downshift | 150 ms engage or disengage |
+| Air per actuation | 0.042 g | 0.10 g |
+
+Air comes from a 90 cubic inch tank. From the air mass per actuation and the number of shifts per event predicted by lap simulation, one fill covers about 4000 shifts and 3000 clutch actuations, which was then confirmed in endurance test runs.
 
 ## Sizing
 
-Starting point is the force the gearbox needs at the shift lever and the travel of the lever:
+The sizing starts from the force needed at the shift lever and its travel, and works back to the cylinder and the supply:
 
 | Quantity | Value |
 |---|---|
@@ -16,19 +31,17 @@ Starting point is the force the gearbox needs at the shift lever and the travel 
 | Cylinder bore | 25 mm |
 | Supply hose inner diameter | 4 mm |
 
-From these I worked out the piston area, the area ratio between cylinder and hose, the air velocities in both, and from an energy balance on the flow the supply pressure needed to complete a shift. The calculation is set up as a spreadsheet so bore, stroke and lever length can be traded against each other.
+225 N on a 32 mm arm is the 7.2 Nm at the spindle. From bore and stroke follow the piston area, the swept volume and with it the air mass per shift, which sizes the tank. I set the calculation up as a spreadsheet so bore, stroke and arm length could be traded against each other.
 
-## Circuit design
+To understand the valve side I also worked through the standard pneumatic control circuits: single- and double-acting cylinders with 3/2 and 5/2 valves, quick-exhaust valves, AND/OR logic valves, time-delay and pressure-sequence valves.
 
-To understand the valve side I worked through a set of standard pneumatic control problems and built the circuits for them:
+## Control strategies
 
-- single-acting and double-acting cylinders with 3/2 and 5/2 directional valves
-- quick-exhaust valves to speed up the return stroke
-- dual-pressure (AND) and shuttle (OR) valves for interlocks
-- time-delay and pressure-sequence valves for timed and pressure-dependent strokes
+The valves are driven from auxiliary outputs of the MoTeC M400 engine control unit, which makes shift strategies possible that a driver cannot do by hand:
 
-A shifter is the same building blocks arranged for two short, fast strokes: a double-acting cylinder, a 5/2 solenoid valve triggered from the paddles, and quick exhausts to keep the shift time down.
+- **Auto-upshift.** The ECU triggers the upshift itself, so no clutch is needed and less air is used. Measured 0 – 80 km/h in 4.71 s, against 5.03 s with driver-triggered flat shifting.
+- **Auto-clutch downshift.** The ECU operates the clutch during downshifts and blocks downshifts above 8000 rpm to prevent over-revving. A manual-clutch downshift took 301 ms on average; over three consecutive downshifts into a hairpin the automatic sequence saves about 0.8 s.
 
 ## What I took from it
 
-This was my introduction to fluid power, and the reason the hydraulic and pneumatic side of later actuator work felt familiar.
+This was my introduction to fluid power and to actuators as part of a controlled system, and the reason the hydraulic and pneumatic side of my later actuator work felt familiar.
