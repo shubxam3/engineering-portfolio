@@ -19,4 +19,4 @@ Case studies of mechanical and mechatronic work that does not live in a code rep
 
 ## About
 
-Shubham Pathak · M.Sc. Mechatronics and Information Technology, Karlsruhe Institute of Technology · [LinkedIn](https://www.linkedin.com/in/shubhampathakk)
+Shubham Pathak · [LinkedIn](https://www.linkedin.com/in/shubhampathakk)
