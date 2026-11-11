@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3261e"/>
+    </marker>
+  </defs>
+  <rect width="780" height="330" fill="#ffffff"/>
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#1f2a37">Throttle assembly: load cases of the structural analysis</text>
+
+  <!-- fixed support -->
+  <rect x="40" y="120" width="18" height="100" fill="#55606c"/>
+  <text x="49" y="244" text-anchor="middle" fill="#4a5a6a" font-size="11.5">fixed</text>
+
+  <!-- handlebar tube -->
+  <rect x="58" y="152" width="580" height="36" fill="#dfe3e8" stroke="#1f2a37" stroke-width="1.2"/>
+  <text x="128" y="175" text-anchor="middle" fill="#1f2a37" font-size="12">handlebar</text>
+
+  <!-- housing -->
+  <rect x="200" y="118" width="112" height="104" rx="4" fill="#cfdcf0" stroke="#1f2a37" stroke-width="1.4"/>
+  <line x1="200" y1="170" x2="312" y2="170" stroke="#1f2a37" stroke-width="1" stroke-dasharray="4 3"/>
+  <rect x="224" y="108" width="10" height="124" fill="#8a94a0" stroke="#1f2a37" stroke-width="1"/>
+  <rect x="278" y="108" width="10" height="124" fill="#8a94a0" stroke="#1f2a37" stroke-width="1"/>
+  <text x="256" y="262" text-anchor="middle" fill="#1f2a37" font-size="12">two-part plastic housing,</text>
+  <text x="256" y="278" text-anchor="middle" fill="#1f2a37" font-size="12">bolts into brass inserts</text>
+
+  <!-- grip -->
+  <rect x="312" y="134" width="300" height="72" rx="10" fill="#ececec" stroke="#1f2a37" stroke-width="1.4"/>
+  <text x="430" y="175" text-anchor="middle" fill="#1f2a37" font-size="12">twist grip</text>
+
+  <!-- load 1 -->
+  <g stroke="#b3261e" stroke-width="2" fill="none" marker-end="url(#b)">
+    <path d="M229 62 V104"/>
+    <path d="M283 62 V104"/>
+  </g>
+  <text x="256" y="54" text-anchor="middle" fill="#b3261e" font-weight="600">1  Bolt pretension</text>
+
+  <!-- load 2 -->
+  <path d="M650 170 H742" stroke="#b3261e" stroke-width="2" fill="none" marker-start="url(#b)" marker-end="url(#b)"/>
+  <text x="696" y="150" text-anchor="middle" fill="#b3261e" font-weight="600">2  Axial push / pull</text>
+
+  <!-- load 3 -->
+  <path d="M540 118 A 26 58 0 0 1 540 222" stroke="#b3261e" stroke-width="2" fill="none" marker-end="url(#b)"/>
+  <text x="560" y="100" text-anchor="middle" fill="#b3261e" font-weight="600">3  Twist torque against the end stop</text>
+
+  <text x="16" y="312" fill="#4a5a6a" font-size="11.5">Each case is solved at room temperature and at elevated temperature, with temperature-dependent data for the glass-filled polyamide parts.</text>
+</svg>

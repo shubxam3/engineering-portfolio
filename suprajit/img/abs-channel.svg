@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1f2a37"/>
+    </marker>
+  </defs>
+  <rect width="780" height="380" fill="#ffffff"/>
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#1f2a37">One ABS channel: the hydraulic circuit that the system model represents</text>
+
+  <!-- hydraulic lines -->
+  <g stroke="#1f2a37" stroke-width="2" fill="none">
+    <path d="M190 75 H300"/>
+    <path d="M460 75 H570"/>
+    <path d="M515 75 V160"/>
+    <path d="M515 210 V260"/>
+    <path d="M435 285 H331" marker-end="url(#c)"/>
+    <path d="M250 260 V77" marker-end="url(#c)"/>
+  </g>
+  <circle cx="515" cy="75" r="3.5" fill="#1f2a37"/>
+  <circle cx="250" cy="75" r="3.5" fill="#1f2a37"/>
+
+  <!-- control lines -->
+  <g stroke="#7a4b00" stroke-width="1.3" fill="none" stroke-dasharray="5 4" marker-end="url(#c)">
+    <path d="M115 160 V130 H380 V101"/>
+    <path d="M190 185 H434"/>
+    <path d="M115 210 V285 H169"/>
+  </g>
+
+  <g stroke="#1f2a37" stroke-width="1.4">
+    <rect x="40" y="50" width="150" height="50" rx="6" fill="#f3f3f3"/>
+    <rect x="300" y="50" width="160" height="50" rx="6" fill="#eef3fa"/>
+    <rect x="570" y="50" width="160" height="50" rx="6" fill="#f3f3f3"/>
+    <rect x="435" y="160" width="160" height="50" rx="6" fill="#eef3fa"/>
+    <rect x="435" y="260" width="160" height="50" rx="6" fill="#eef3fa"/>
+    <rect x="170" y="260" width="160" height="50" rx="6" fill="#eef3fa"/>
+    <rect x="40" y="160" width="150" height="50" rx="6" fill="#fdf3e1"/>
+  </g>
+
+  <g fill="#1f2a37" text-anchor="middle">
+    <text x="115" y="72">Master cylinder</text><text x="115" y="89" font-size="11.5" fill="#4a5a6a">brake lever or pedal</text>
+    <text x="380" y="72">Inlet valve</text><text x="380" y="89" font-size="11.5" fill="#4a5a6a">solenoid, normally open</text>
+    <text x="650" y="72">Brake caliper</text><text x="650" y="89" font-size="11.5" fill="#4a5a6a">wheel pressure</text>
+    <text x="515" y="182">Outlet valve</text><text x="515" y="199" font-size="11.5" fill="#4a5a6a">solenoid, normally closed</text>
+    <text x="515" y="282">Low-pressure</text><text x="515" y="299">accumulator</text>
+    <text x="250" y="282">Return pump</text><text x="250" y="299" font-size="11.5" fill="#4a5a6a">motor-driven</text>
+    <text x="115" y="182">Control unit</text><text x="115" y="199" font-size="11.5" fill="#4a5a6a">wheel speed in</text>
+  </g>
+
+  <text x="16" y="346" fill="#4a5a6a" font-size="11.5">Build: inlet open, outlet closed.   Hold: both closed.   Release: inlet closed, outlet open, pump returns the fluid.</text>
+  <text x="16" y="364" fill="#4a5a6a" font-size="11.5">Solid lines: hydraulic. Dashed lines: electrical commands to valves and pump.</text>
+</svg>

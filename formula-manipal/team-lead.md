@@ -8,7 +8,7 @@ Formula Manipal is the Formula Student team of Manipal Institute of Technology. 
 
 - An interdisciplinary team of about 80 students across mechanical, electrical, aerodynamics and management subsystems.
 - Two cars in parallel, one combustion and one electric, through design, manufacturing and testing.
-- Responsible for technical compliance with the rules, the project timeline and the budget.
+- Responsible for technical compliance with the rules, the project timeline and the budget. See [cost, budget and business plan](cost-and-business.md).
 
 ## Results
 
