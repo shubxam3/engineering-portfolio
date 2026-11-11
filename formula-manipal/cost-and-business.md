@@ -31,18 +31,25 @@ University purchasing runs through purchase orders and takes weeks. Small and ur
 
 ## Cost report and bill of materials
 
-The cost event asks for a costed bill of materials: every part of the car, listed by system, with its material, manufacturing processes, fasteners and tooling. The team's document runs to well over 100 pages. I worked on the team's cost report and bill of materials.
+The Cost and Manufacturing event is worth 100 of the 1000 competition points. The team hands in a costed bill of materials: every part of the car, listed by system, with its material, manufacturing processes, fasteners and tooling. At the event the judges go through it at the car and ask the team to defend the numbers and the manufacturing choices. The team's document runs to well over 100 pages. I worked on the team's cost report and bill of materials.
 
 ## Business plan
 
-In the business plan event the team presents a business case built around its race car to judges who act as investors.
+The Business Plan Presentation is worth 75 points. The team develops a business case around its race car and presents it to judges who act as investors. At Formula Student Germany a short pitch video is submitted first, followed by the live presentation and questions at the event.
 
 | Competition | Business plan result |
 |---|---|
-| Formula Student Germany 2022 | 6th |
-| Formula Bharat 2021 (virtual) | 7th of 33 |
+| Formula Student Germany 2022 | 6th of 26 teams, 68.9 of 75 points |
+| Formula Bharat 2021 (virtual) | 7th |
 
-I worked on the business plan for Formula Student Germany 2022.
+I worked on the business plan for Formula Student Germany 2022. Results: [official FSG 2022 results](https://www.formulastudent.de/fsg/results/2022/).
+
+## Rules knowledge
+
+Places at the competitions are decided by rules quizzes before a car is built, so the team trained for them like an event: weekly mock tests per rulebook section, written by the subsystem heads.
+
+- **Formula Bharat 2021:** 1st in the Rulebook Test in both the combustion and the electric class.
+- **Formula Student Germany 2022:** qualified through the registration quiz for one of the 26 combustion places.
 
 ## Studies from the task phase
 

@@ -17,7 +17,8 @@ Formula Manipal is the Formula Student team of Manipal Institute of Technology. 
 | Formula Bharat 2021, Electric | 2nd |
 | Formula Bharat 2021, Combustion | 3rd |
 | Formula Bharat 2021, Rulebook Test | 1st in both classes |
-| Formula Student Germany 2022 | 6th in the Business Plan event |
+| Formula Student Germany 2022, registration quiz | Qualified for one of the 26 combustion places |
+| Formula Student Germany 2022, Business Plan | 6th of 26 teams, 68.9 of 75 points |
 
 ## The cars
 
